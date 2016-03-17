@@ -1,5 +1,6 @@
-const appendFileSync = require('fs')['appendFileSync']
+const { appendFileSync } = require('fs')
+const path = require('path')
 
-const path = 'C:\\Users\\calebgregory\\code\\node-windows-service\\logs\\stdout.log'
+const logFile = path.resolve(__dirname, '..', 'logs', 'stdout.log')
 
-module.exports = (text) => appendFileSync(path, text)
+module.exports = (text) => appendFileSync(logFile, text)
