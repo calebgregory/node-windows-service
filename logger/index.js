@@ -1,7 +1,5 @@
-const { createLogger } = require('bunyan')
+const appendFileSync = require('fs')['appendFileSync']
 
 const path = 'C:\\Users\\calebgregory\\code\\node-windows-service\\logs\\stdout.log'
 
-module.exports = createLogger({
-  streams: [{ path }]
-})
+module.exports = (text) => appendFileSync(path, text)
