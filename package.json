@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/calebgregory/node-windows-service/issues"
   },
-  "homepage": "https://github.com/calebgregory/node-windows-service#readme"
+  "homepage": "https://github.com/calebgregory/node-windows-service#readme",
+  "dependencies": {
+    "bunyan": "^1.8.0"
+  }
 }
